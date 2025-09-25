@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>90 Days Challenge</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>90 DAYS CHALLENGE TRACKER</h1>
+
+    <nav class="nav-bar">
+      <label>Start:
+        <input type="date" id="startDate">
+      </label>
+      <label>End:
+        <input type="date" id="endDate" readonly>
+      </label>
+      <label>Goal:
+        <input type="text" id="goal" placeholder="Goal…">
+      </label>
+      <button id="saveDates">Save</button>
+      <button id="reset">Reset</button>
+    </nav>
+
+    <div class="progress">
+      <div id="progressBar"></div>
+      <span id="progressText">0%</span>
+    </div>
+
+    <div class="grid" id="daysGrid"></div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
